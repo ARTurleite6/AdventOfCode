@@ -1,4 +1,4 @@
-import sys, heapq
+import sys
 
 def main():
     heap = []
@@ -13,9 +13,9 @@ def main():
                 sum = 0
     result = 0
     i = 0
-    heapq._heapify_max(heap)
+    heap.sort()
     while heap and i < 3:
-        value = heapq.heappop(heap)
+        value = heap.pop()
         result += value
         i += 1
     print(result)

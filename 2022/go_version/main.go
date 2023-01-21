@@ -1,8 +1,9 @@
 package main
 
 import (
-    "os"
 	"fmt"
+	"os"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -16,13 +17,12 @@ func main() {
 
     data := string(bytes)
 
-	max := 0
+    var heap []int
+
 	sum := 0
 	for _, line := range strings.Split(data, "\n") {
 		if line == "" {
-			if sum > max {
-                max = sum
-			}
+            heap = append(heap, sum)
             sum = 0
 		} else {
             value, err := strconv.Atoi(line)
@@ -33,6 +33,8 @@ func main() {
             sum += value
         }
 	}
+
+    sort.Ints(heap)
 
     fmt.Println(max)
 
