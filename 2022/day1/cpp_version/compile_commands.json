@@ -1,0 +1,15 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-std=c++20",
+      "-o",
+      "main",
+      "main.cpp"
+    ],
+    "directory": "/Users/arturleite/dev/AdventOfCode/2022/day1/cpp_version",
+    "file": "/Users/arturleite/dev/AdventOfCode/2022/day1/cpp_version/main.cpp",
+    "output": "/Users/arturleite/dev/AdventOfCode/2022/day1/cpp_version/main"
+  }
+]
