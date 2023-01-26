@@ -1,0 +1,22 @@
+{
+  "name": "ts_version",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4",
+    "@types/heap": "^0.2.31"
+  },
+  "dependencies": {
+    "heap": "^0.2.7"
+  }
+}
